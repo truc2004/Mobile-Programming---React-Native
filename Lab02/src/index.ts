@@ -1,4 +1,5 @@
 
+import { runForAwait } from './bai17';
 import { helloAsync } from './bai01';
 import { getNumber } from './bai02';
 import { throwError } from './bai03';
@@ -9,24 +10,34 @@ import { runBai07 } from './bai07';
 import { promiseChain } from './bai08';
 import { filterEvenNumbers } from './bai09';
 import { runBai10 } from './bai10';
+import { helloAsyncAwait } from './bai11';
+import { runBai12 } from './bai12';
+import { runBai13 } from './bai13';
+import { multiplyAfter1s } from './bai14';
+import { runSequential } from './bai15';
+import { runParallelTasks } from './bai16';
+import { runFetchUser } from './bai18';
+import { runFetchUsers } from './bai19';
+import { runFetchUserTimeout } from './bai20';
+
 
 // bài 1
 helloAsync().then((message) => {
-    console.log("\nBài 1\n" + message); 
+  console.log("\nBài 1\n" + message);
 });
 
 // bài 2
 getNumber().then((number) => {
-    console.log("\nBài 2\n" + number);  
+  console.log("\nBài 2\n" + number);
 });
 
 // bài 3
 throwError()
   .then(() => {
-    
+
   })
   .catch((error) => {
-    console.log("\nBài 3\n" + error.message); 
+    console.log("\nBài 3\n" + error.message);
   });
 
 // bài 4
@@ -65,3 +76,46 @@ filterEvenNumbers(numbers)
 
 // bài 10
 runBai10(numbers)
+
+// bài 11
+async function runBai11() {
+  const result = await helloAsyncAwait();
+  console.log("\nBài 11");
+  console.log(result);
+}
+
+runBai11();
+
+// bài 12
+runBai12()
+
+// bài 13
+runBai13()
+
+// bài 14
+const runBai14 = async () => {
+  const result = await multiplyAfter1s(5);
+  console.log("\nBài 14");
+  
+  console.log("Result:", result); 
+};
+
+runBai14();
+
+// bài 15
+runSequential()
+
+// bài 16
+runParallelTasks()
+
+// bài 17
+runForAwait()
+
+// bài 18
+runFetchUser()
+
+// bài 19
+runFetchUsers()
+
+// bài 20
+runFetchUserTimeout()
