@@ -19,6 +19,16 @@ import { runParallelTasks } from './bai16';
 import { runFetchUser } from './bai18';
 import { runFetchUsers } from './bai19';
 import { runFetchUserTimeout } from './bai20';
+import { getTodo } from './bai21';
+import { fetchAPIMultiple } from './bai22';
+import { getComplete } from './bai23';
+import { downloadFile } from './bai25';
+import { postData } from './bai24';
+import { setTimeout1 } from './bai26';
+import { fetchWithRetry } from './bai27';
+import { queueProcess } from './bai29';
+import { batchProcess } from './bai28';
+import { bai30 } from './bai30';
 
 
 // bài 1
@@ -119,3 +129,73 @@ runFetchUsers()
 
 // bài 20
 runFetchUserTimeout()
+
+// bài 21
+async function runBai21() {
+  await getTodo()
+}
+
+runBai21()
+
+// bài 22
+async function runBai22() {
+  await fetchAPIMultiple(3)
+}
+
+runBai22()
+
+// bài 23
+async function runBai23() {
+  await getComplete()
+}
+
+runBai23()
+
+// bài 24
+async function runBai24() {
+  await postData()
+}
+
+runBai24()
+
+// bài 25
+async function runBai25() {
+  await downloadFile()
+}
+
+runBai25()
+
+// bài 26
+async function runBai26() {
+  await setTimeout1()
+}
+
+runBai26()
+
+// bài 27
+async function runBai27() {
+  console.log("\nBài 27", await fetchWithRetry("https://jsonplaceholder.typicode.com/todos/1", 3));
+}
+
+runBai27()
+
+// bài 28
+async function runBai28() {
+  await batchProcess()
+}
+
+runBai28()
+
+// bài 29
+async function runBai29() {
+  await queueProcess()
+}
+
+runBai29()
+
+// bài 30
+async function runBai30() {
+  await bai30()
+}
+
+runBai30()

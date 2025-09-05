@@ -20,6 +20,16 @@ const bai16_1 = require("./bai16");
 const bai18_1 = require("./bai18");
 const bai19_1 = require("./bai19");
 const bai20_1 = require("./bai20");
+const bai21_1 = require("./bai21");
+const bai22_1 = require("./bai22");
+const bai23_1 = require("./bai23");
+const bai25_1 = require("./bai25");
+const bai24_1 = require("./bai24");
+const bai26_1 = require("./bai26");
+const bai27_1 = require("./bai27");
+const bai29_1 = require("./bai29");
+const bai28_1 = require("./bai28");
+const bai30_1 = require("./bai30");
 // bài 1
 (0, bai01_1.helloAsync)().then((message) => {
     console.log("\nBài 1\n" + message);
@@ -94,3 +104,53 @@ runBai14();
 (0, bai19_1.runFetchUsers)();
 // bài 20
 (0, bai20_1.runFetchUserTimeout)();
+// bài 21
+async function runBai21() {
+    await (0, bai21_1.getTodo)();
+}
+runBai21();
+// bài 22
+async function runBai22() {
+    await (0, bai22_1.fetchAPIMultiple)(3);
+}
+runBai22();
+// bài 23
+async function runBai23() {
+    await (0, bai23_1.getComplete)();
+}
+runBai23();
+// bài 24
+async function runBai24() {
+    await (0, bai24_1.postData)();
+}
+runBai24();
+// bài 25
+async function runBai25() {
+    await (0, bai25_1.downloadFile)();
+}
+runBai25();
+// bài 26
+async function runBai26() {
+    await (0, bai26_1.setTimeout1)();
+}
+runBai26();
+// bài 27
+async function runBai27() {
+    console.log("\nBài 27", await (0, bai27_1.fetchWithRetry)("https://jsonplaceholder.typicode.com/todos/1", 3));
+}
+runBai27();
+// bài 28
+async function runBai28() {
+    await (0, bai28_1.batchProcess)();
+}
+runBai28();
+// bài 29
+async function runBai29() {
+    await (0, bai29_1.queueProcess)();
+}
+runBai29();
+// bài 30
+async function runBai30() {
+    await (0, bai30_1.bai30)();
+}
+runBai30();
