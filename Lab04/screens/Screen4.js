@@ -1,6 +1,6 @@
 import { View, Text, TextInput, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
-export default function App() {
+export default function Screen4() {
   return (
     <View style={{ flex: 1, backgroundColor: '#8D8DBE' }}>
       <View style={styles.contentContainer}>
@@ -91,7 +91,6 @@ const styles = StyleSheet.create({
     flex: 1.5,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 10,
   },
   title: {
     color: 'white',
@@ -100,9 +99,9 @@ const styles = StyleSheet.create({
   },
   divider: {
     backgroundColor: '#151537',
-    height: 20,
+    height: 30,
     width: '100%',
-    marginTop: 20,
+    marginTop: 30,
   },
   infoContainer: {
     flex: 3,
