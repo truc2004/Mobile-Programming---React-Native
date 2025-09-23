@@ -8,11 +8,11 @@ import {
   TextInput,
 } from 'react-native';
 
-export default function Screen1({ navigation }) {
+export default function PhoneWhite({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.imgContainer}>
-        <Image source={require('../../assets/blue.png')} style={styles.img} />
+        <Image source={require('../../assets/white.png')} style={styles.img} />
       </View>
 
       <View style={styles.infoContainer}>
