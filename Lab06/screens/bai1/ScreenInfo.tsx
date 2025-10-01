@@ -71,7 +71,7 @@ export default function App({ route, navigation }) {
             onPress={() => {
               // Update state and navigate
               setSelectedImage(require("../../assets/black.png"));
-              setSelectedPrice("1.0700.000 VNĐ");
+              setSelectedPrice("1.070.000 VNĐ");
               navigation.navigate('ScreenInfo', {
                 image: require("../../assets/black.png"),
                 color: "đen",
@@ -86,7 +86,7 @@ export default function App({ route, navigation }) {
             onPress={() => {
               // Update state and navigate
               setSelectedImage(require("../../assets/blue.png"));
-              setSelectedPrice("1.0700.000 VNĐ");
+              setSelectedPrice("1.790.000 VNĐ");
               navigation.navigate('ScreenInfo', {
                 image: require("../../assets/blue.png"),
                 color: "xanh",
