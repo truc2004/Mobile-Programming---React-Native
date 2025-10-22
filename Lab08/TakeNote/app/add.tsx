@@ -103,13 +103,14 @@ const styles = StyleSheet.create({
     inputContainer: {
         borderColor: '#ccc',
         borderWidth: 1,
-        padding: 10,
+        padding: 5,
         borderRadius: 5,
         flexDirection: 'row',
         marginTop: 30,
     },
     input: {
         width: '100%',
+        height: '100%',
     },
     button: {
         backgroundColor: "#00BDD6",

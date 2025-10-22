@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "TakeNote",
-    "slug": "TakeNote",
+    "name": "SmartPhone",
+    "slug": "SmartPhone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "takenote",
+    "scheme": "smartphone",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -20,7 +20,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.thanh_truc.TakeNote"
+      "package": "com.thanh_truc.SmartPhone"
     },
     "web": {
       "output": "static",
@@ -48,7 +48,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "55b4c089-69c2-4042-b8c4-48724bd6053f"
+        "projectId": "d1fd5002-5be5-4197-a7c0-adbc6785ac2b"
       }
     },
     "owner": "thanh_truc"
